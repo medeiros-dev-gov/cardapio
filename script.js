@@ -131,8 +131,9 @@ addressInput.addEventListener("input", () => {
 // ===============================
 function checkRestaurantOpen() {
     const hour = new Date().getHours();
-    return hour >= 15 && hour < 3;
+    return hour >= 15 || hour < 3;
 }
+
 
 if (spanItem) {
     spanItem.classList.toggle("bg-green-600", checkRestaurantOpen());
