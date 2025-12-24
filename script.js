@@ -131,7 +131,7 @@ addressInput.addEventListener("input", () => {
 // ===============================
 function checkRestaurantOpen() {
     const hour = new Date().getHours();
-    return hour >= 15 && hour < 23;
+    return hour >= 23 && hour < 23;
 }
 
 if (spanItem) {
